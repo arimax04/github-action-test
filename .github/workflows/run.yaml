@@ -6,5 +6,5 @@ jobs:
     steps:
       - run: echo "this is pen"
       - run: |
-        ls -la
-        pwd
+          ls -la
+          pwd

@@ -16,3 +16,8 @@ jobs:
           ls -la
           nproc
           free -m
+  docker-compose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: compose
+        run: docker compose run app

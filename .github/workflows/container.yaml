@@ -20,4 +20,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: compose
-        run: docker compose run app
+        run: |
+          ls
+          docker compose run app

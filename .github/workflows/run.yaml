@@ -8,3 +8,5 @@ jobs:
       - run: |
           ls -la
           pwd
+          touch b
+          ls -la

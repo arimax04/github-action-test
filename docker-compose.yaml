@@ -3,3 +3,8 @@ services:
   app:
     image: bitnami/git
     command: echo "OK"
+  self:
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    command: echo "OK2"

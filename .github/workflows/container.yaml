@@ -14,7 +14,6 @@ jobs:
           nproc
           free -m
   docker-compose:
-    needs: node-docker
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -22,3 +21,14 @@ jobs:
         run: |
           ls -la
           docker compose run --rm app
+          docker image ls
+  docker-compose2:
+    needs: docker-compose
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: compose
+        run: |
+          ls -la
+          docker compose run --rm self
+          docker image ls

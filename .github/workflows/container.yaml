@@ -21,5 +21,4 @@ jobs:
     steps:
       - name: compose
         run: |
-          ls
-          docker compose run app
+          ls -la

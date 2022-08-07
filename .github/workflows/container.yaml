@@ -20,3 +20,4 @@ jobs:
       - name: compose
         run: |
           ls -la
+          docker compose run --rm app

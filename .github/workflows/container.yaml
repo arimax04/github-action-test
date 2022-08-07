@@ -14,3 +14,4 @@ jobs:
           cat /etc/os-release #Linuxバージョンの確認
           pwd
           ls -la
+          nproc
